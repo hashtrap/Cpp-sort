@@ -4,6 +4,7 @@
 #include<iostream>
 #include<fstream>
 #include<vector>
+#include<cmath>
 template<typename T>class Sort
 {
 public :
@@ -13,10 +14,12 @@ public :
     Sort(std::string filepath);
     ~Sort();
 
-    std::vector<T> BubbleSort(std::vector<T> target,bool asc);
-    std::vector<T> InsertionSort(std::vector<T> target,bool asc);
-    std::vector<T> MergeSort(std::vector<T> target,bool asc);
+    void BubbleSort(std::vector<T>& target,bool asc);
+    void InsertionSort(std::vector<T>& target,bool asc);
+    void MergeSort(std::vector<T>& target,bool asc);
     T BinarySearch(std::vector<T>,T target);
+
+
 
 };
 
