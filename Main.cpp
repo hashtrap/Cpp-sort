@@ -26,6 +26,6 @@ int main()
     {
         cout<<number[i]<<endl;
     }
-
+     sort.BinarySearch(number,5);
     return 0;
 }

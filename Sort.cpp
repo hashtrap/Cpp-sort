@@ -127,3 +127,25 @@ void Sort<T>::MergeSort(std::vector<T>& target, bool asc ) {
         target[k++] = right[j++];
     }
 }
+
+template <typename T>
+int Sort<T>:: BinarySearch(const std::vector<T>& arr, const T& value) {
+    int left = 0;
+    int right = arr.size() - 1;
+
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
+
+        if (arr[mid] == value) {
+            return mid;
+        }
+
+        if (arr[mid] < value) {
+            left = mid + 1;
+        } else {
+            right = mid - 1;
+        }
+    }
+
+    return -1; // value not found
+}

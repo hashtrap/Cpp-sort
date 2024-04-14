@@ -17,7 +17,7 @@ public :
     void BubbleSort(std::vector<T>& target,bool asc);
     void InsertionSort(std::vector<T>& target,bool asc);
     void MergeSort(std::vector<T>& target,bool asc);
-    T BinarySearch(std::vector<T>,T target);
+    int BinarySearch(std::vector<T>,const T& target);
 
 
 
